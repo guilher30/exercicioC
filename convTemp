@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdio.h>
+int main(void) {
+    printf("Digite a temperatura em Celsius entre 30º e 90º graus: ");
+  float celsius;
+  float fahrenheit;
+  scanf("%f", &celsius);
+  while(celsius < 30 || celsius > 90){
+    printf("Temperatura inadequada ao processo\n");
+    printf("Digite a temperatura novamente: ");
+    scanf("%f", &celsius);
+  }
+  fahrenheit =1.8 * celsius +32;
+  printf("Graus Celsius %.1f: \n", celsius );
+  printf("Graus em Fahrenheit: %.1f \n", fahrenheit );
+  return 0;
+}
